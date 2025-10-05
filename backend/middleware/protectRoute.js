@@ -31,8 +31,6 @@ const protectRoute = async (req, res, next) => {
  
          next();
 
-      res.status(200).json({ message: "Protected route accessed", user  });
-
     } catch (error) {
         console.log("Error in protectRoute middleware:", error.message);
         return res.status(401).json({ message: "Not authorized, token failed" });
