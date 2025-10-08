@@ -1,6 +1,6 @@
 import User from "../models/user.model.js";
 
-export const getUsers = async(req,res)=>{
+export const getUsersforSideBar = async(req,res)=>{
 
 
     try {
